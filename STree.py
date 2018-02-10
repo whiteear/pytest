@@ -66,6 +66,11 @@ def test2():
     global seq
     print seq
 
+
+#######################
+# for a search tree, all the node in its left tree shoud in a range(MIN, current node value).
+# and all the node in its right tree shoud in range (current node value, MAX).
+# recersively checking whether subtree is in valid range.
 MAXINT = sys.maxint
 MININT = -sys.maxint-1
 def isValidBT2(node):
